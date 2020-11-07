@@ -83,8 +83,16 @@ Class AdminController extends Controller {
         $this->loadView("views/admin-layout.php", 1, "content"); // save the results of this view, into $this->content
 
 		$this->loadLastView("views/main-admin.php"); // final view
+    }
+    
+    // if session is out go back admin login page
+	public function pretrip(){
+
+		if($_SESSION["userId"]=="")
+		{
+			$this->go("admin", "login");
+		}
 	}
-	
 }
 
 ?>
