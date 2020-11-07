@@ -29,5 +29,7 @@
         </div><!-- .login / login.php -->
     </div><!-- .wrapper -->
 	<script src="https://kit.fontawesome.com/76c00b2855.js" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+
 </body>
 </html>
