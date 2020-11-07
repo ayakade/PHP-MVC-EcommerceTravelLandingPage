@@ -20,8 +20,8 @@
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
-            <label>Password</label>
-            <input type="text" name="strPassword" value="" />
+            <label>Phone number</label>
+            <input type="text" name="strPhoneNumber" value="" />
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup">
