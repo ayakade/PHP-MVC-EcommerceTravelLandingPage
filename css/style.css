@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+    color: #044b6b;
+}
+
+a {
+	text-decoration: none;
+	color: #044b6b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 14px;
+}
+
+/* MOBILE */
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.row:before, .row:after {
+    content: ""; 
+    display: table; 
+}
+
+.row:after {
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* wrapper */
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+/* footer */
+
+.footer {
+    flex-shrink: 0;
+    background: #0c96a3;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+/* container */
+
+.container {
+    flex: 1 0 auto;
+    padding: 0 40px;
+}
+
+/* heroTop */
+
+ .hero {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .heroImage {
+    padding: 200px 0;
+    background:#000;
+ }
+
+ .hero .title {
+     margin: 50px 0;
+     padding: 0 50px;
+ }
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 700px) {
+
+	.col-lg-1 { width: 8.33%; }
+	.col-lg-2 { width: 16.66%; }
+	.col-lg-3 { width: 25%; }
+	.col-lg-4 { width: 33.33%; }
+	.col-lg-5 { width: 41.66%; }
+	.col-lg-6 { width: 50%; }
+	.col-lg-7 { width: 58.33%; }
+	.col-lg-8 { width: 66.66%; }
+	.col-lg-9 { width: 75%; }
+	.col-lg-10 { width: 83.33%; }
+	.col-lg-11 { width: 91.66%; }
+	.col-lg-12 { width: 100%; }
+
+	.row:before, .row:after {
+	content: ""; 
+	            display: table; 
+	}
+
+	.row:after {
+	            clear: both;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+    
+    /* footer */
+
+    .footer {
+        padding: 50px 100px;
+    }
+
+    .footer .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    /* contaner */
+    .container {
+		margin-top: 120px;
+        padding: 0 100px;
+    }
+}
