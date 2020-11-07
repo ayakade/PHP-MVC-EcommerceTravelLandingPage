@@ -1,3 +1,3 @@
 <div class="points">
-    this is point section
-</div><!-- .points / points.php ->
+    <h2>this is point section</h2>
+</div><!-- .points / points.php -->
