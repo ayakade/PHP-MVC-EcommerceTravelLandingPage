@@ -20,6 +20,16 @@
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
+            <label>Country</label>
+            <input type="text" name="strCountry" value="" />
+        </div><!-- .fieldgroup -->
+
+        <div class="fieldgroup required">
+            <label>Age</label>
+            <input type="text" name="strAge" value="" />
+        </div><!-- .fieldgroup -->
+
+        <div class="fieldgroup required">
             <label>Phone number</label>
             <input type="text" name="strPhoneNumber" value="" />
         </div><!-- .fieldgroup -->
