@@ -5,7 +5,7 @@ Class AdminController extends Controller {
 	// login page
 	public function login() 
 	{
-		$this->loadLastView("views/login.php"); // final view
+		$this->loadLastView("views/admin-login.php"); // final view
 	}
 
 	// admin user login
@@ -64,19 +64,24 @@ Class AdminController extends Controller {
 	// admin main page after login 
 	public function adminMain() 
 	{
+        $this->loadRoute("Global", "adminNav", "navHTML"); // load nav
+
+        $this->loadData(Customers::getAll(), "oCustomers");
+        $this->loadView("views/admin-customerList.php", 1, "contentHTML"); 
+        $this->loadView("views/admin-layout.php", 1, "content"); // save the results of this view, into $this->content
         
-		$this->loadLastView("views/main-admin.php"); // final view
-    }
-    
-    // customers list  
-	public function customers() 
-	{
-		$this->loadLastView("views/main-admin.php"); // final view
+        $this->loadLastView("views/main-admin.php"); // final view
     }
     
     // customer info  
 	public function customer() 
 	{
+        $this->loadRoute("Global", "adminNav", "navHTML"); // load nav
+
+        $this->loadData(Customers::getCustomer(), "oCustomers");
+        $this->loadView("views/admin-customer.php", 1, "contentHTML"); 
+        $this->loadView("views/admin-layout.php", 1, "content"); // save the results of this view, into $this->content
+
 		$this->loadLastView("views/main-admin.php"); // final view
 	}
 	
