@@ -11,15 +11,21 @@ body {
 
 a {
 	text-decoration: none;
-	color: #044b6b;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-size: 20px;
+	font-size: 24px;
 }
 
 p {
 	font-size: 14px;
+}
+
+.cta {
+	background: #E1AC71;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
 }
 
 /* MOBILE */
@@ -62,35 +68,131 @@ html, body {
 
 .footer {
     flex-shrink: 0;
-    background: #0c96a3;
+    background: #6DA4A9;
     color: #fff;
-    text-align: center;
-    padding: 50px;
+	text-align: center;
+	padding: 20px;
+}
+
+.footer p {
+	font-size: 10px;
+}
+
+/* heroTop */
+
+.heroTop {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.heroTop .heroImage {
+    padding: 200px 0;
+	background: url(../imgs/hero-top.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.heroTop .title {
+	margin: 50px 0;
+	padding: 0 30px;
+}
+
+.heroTop .title img {
+	width: 150px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.heroTop .title h1 {
+	margin-bottom: 10px;
+}
+
+.heroTop .title p {
+	margin-bottom: 30px;
 }
 
 /* container */
 
 .container {
     flex: 1 0 auto;
-    padding: 0 40px;
+	text-align: center;
 }
 
-/* heroTop */
+.intro, .points {
+	padding: 0 40px;
+}
 
- .heroTop {
-    display: flex;
-    flex-direction: column;
- }
+/* intro section */
 
- .heroTop .heroImage {
+.intro, .points {
+	margin: 50px 0;
+}
+
+/* form section */
+
+.form {
+	background: #F7E4BC;
+	padding: 50px 30px;
+}
+
+.form .title {
+	margin-bottom: 50px;
+}
+
+.form .title h2 {
+	margin-bottom: 20px;
+}
+
+.form .title .lists .list {
+	margin-bottom: 20px;
+}
+
+#signupForm {
+	background: #fff;
+	padding: 60px 20px;
+	border-radius: 50px;
+}
+
+label {
+	width: 35%;
+}
+
+input[type="text"] {
+	width: 60%;
+}
+
+label {
+	font-weight: bold;
+	display: inline-block;
+}
+
+input[type="text"] {
+	padding: 5px 10px;
+	border: 1px solid #044b6b;
+	border-radius: 3px;
+}
+
+.fieldgroup {
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+input[type="submit"] {
+	border: none;
+}
+
+/* hero bottom */
+
+.heroBottom .heroImage {
     padding: 200px 0;
-    background:#000;
- }
-
- .heroTop .title {
-     margin: 50px 0;
-     padding: 0 50px;
- }
+	background: url(../imgs/hero-bottom.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
 
 /* DESKTOP */
 
@@ -125,22 +227,52 @@ html, body {
 	p {
 		font-size: 18px;
 	}
-    
-    /* footer */
+	
+	/* hero top */
+	
+	.heroTop .heroImage {
+		padding: 300px 0;
+		position: relative;
+	}
 
-    .footer {
-        padding: 50px 100px;
-    }
+	.heroTop .title {
+		position: absolute;
+		top: 50px;
+		left: 150px;
+	}
 
-    .footer .row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-    }
+	.intro, .points {
+		padding: 0 130px;
+	}
+	
+	/* intro section */
 
-    /* contaner */
-    .container {
-		margin-top: 120px;
-        padding: 0 100px;
-    }
+	.intro h2 {
+		text-align: center;
+	}
+
+	/* form section */
+
+	.form {
+		display: flex;
+		text-align: left;
+		margin: 0;
+		padding: 100px 130px;
+	}
+
+	.form .title {
+		margin-top: 80px;
+		margin-right: 70px;
+	}
+
+	#signupForm {
+		padding: 80px 50px;
+	}
+
+	/* hero bottom */
+
+	.heroBottom .heroImage {
+		padding: 300px 0;
+		background-position: 80% 95%;
+	}
 }
