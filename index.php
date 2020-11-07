@@ -6,6 +6,9 @@ include("controllers/Controller.php");
 include("libs/DB.php");
 include("libs/Errors.php");
 
+include("models/Customers.php");
+include("models/Employees.php");
+
 $controller = setVariable("controller", "Public");
 $action = setVariable("action", "main");
 
