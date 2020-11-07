@@ -5,7 +5,7 @@ Class AdminController extends Controller {
 	// login page
 	public function login() 
 	{
-		$this->loadLastView("views/admin-login.php"); // final view
+		$this->loadLastView("views/login.php"); // final view
 	}
 
 	// admin user login
@@ -64,6 +64,7 @@ Class AdminController extends Controller {
 	// admin main page after login 
 	public function adminMain() 
 	{
+        
 		$this->loadLastView("views/main-admin.php"); // final view
     }
     
