@@ -283,6 +283,28 @@ input[type="submit"] {
 	border: none;
 }
 
+/* error */
+
+/* error */
+
+.errorpopup { 
+	opacity: 0; 
+	transition: opacity .5s linear; 
+	color: crimson;
+}
+
+.error .errorpopup {
+	opacity: 1;
+}
+
+.error {
+	color: crimson;
+}
+
+.error input {
+	border: 2px solid crimson;
+}
+
 /* hero bottom */
 
 .heroBottom {
