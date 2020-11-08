@@ -243,7 +243,7 @@ html, body {
 }
 
 .points .point .title {
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 .points .point .title h3 {
@@ -357,7 +357,7 @@ input[type="submit"] {
 	position: absolute;
 	color: #fff;
 	text-align: center;
-	left: 6%;
+	left: 7%;
 	top: 40%;
 }
 
