@@ -11,7 +11,8 @@
         <?php
             $arrMenu = array(
                 array('menu'=>'Customers', 'link'=>'index.php?controller=admin&action=adminMain', 'icon'=>'fas fa-address-book'),
-                array('menu'=>'Logout', 'link'=>'index.php?controller=admin&action=doLogOut', 'icon'=>'fas fa-sign-out-alt')
+                // array('menu'=>'Logout', 'link'=>'index.php?controller=admin&action=doLogOut', 'icon'=>'fas fa-sign-out-alt')
+                array('menu'=>'Logout', 'link'=>'index.php?controller=public&action=doLogOut', 'icon'=>'fas fa-sign-out-alt')
             );
            
             foreach ($arrMenu as $key => $menu) {
