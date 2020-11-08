@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Coming soon!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
         <?=$this->content?> 
     </div><!-- .wrapper -->
 	<script src="https://kit.fontawesome.com/76c00b2855.js" crossorigin="anonymous"></script>
-	<script src="js/submit.js">
+	<script src="js/submit.js"></script>
+	<script src="js/countdown.js"></script>
 </body>
 </html>
