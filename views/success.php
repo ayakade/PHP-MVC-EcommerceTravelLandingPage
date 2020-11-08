@@ -6,6 +6,6 @@
             <p>You're on our VIP list now!<br>Here's your 10% discount code for your first trip with us.<br><strong>TRAVEL10</strong><br><br>We will see you soon!</p>
         </div><!-- .title -->
 
-        <a class="cta" href="index.php">Go back our website</a>
+        <a class="cta" href="index.php">Go Back Our Website</a>
     </div><!-- .success -->
 </div><!-- .success-container / success.php -->
