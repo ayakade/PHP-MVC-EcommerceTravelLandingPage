@@ -19,6 +19,10 @@
                 <span class="minutes" id="minute"></span> 
                 <div class="smalltext">Minutes</div> 
             </div><!-- .count -->
+            <div class="count"> 
+                <span class="minutes" id="second"></span> 
+                <div class="smalltext">Seconds</div> 
+            </div><!-- .count -->
         </div><!-- .clock -->
 
        <p>Our website is lanching on Dec 13th.<br>Sign up for our VIP list now, get limited dicount code and save money for your next trip!</p>
