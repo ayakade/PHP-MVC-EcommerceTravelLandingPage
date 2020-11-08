@@ -570,6 +570,10 @@ input[type="submit"] {
 		padding: 0;
 	}
 
+	.form .title .lists .list {
+		padding:0;
+	}
+
 	#signupForm {
 		padding: 80px 50px;
 	}
