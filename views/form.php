@@ -29,36 +29,57 @@
         <div class="fieldgroup required">
             <label>* First name</label>
             <input type="text" name="strFirstName" placeholder="first name" value="" />
+            <div class="errorpopup">
+                <p>This field is required</p>
+            </div><!-- .error pop up -->
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
             <label>* Last name</label>
             <input type="text" name="strLastName" placeholder="last name" value="" />
+            <div class="errorpopup">
+                <p>This field is required</p>
+            </div><!-- .error pop up -->
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
             <label>* Email address</label>
             <input type="text" name="strEmail" placeholder="email address" value="" />
+            <div class="errorpopup">
+                <p>This field is required</p>
+            </div><!-- .error pop up -->
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
             <label>* Phone number</label>
             <input type="text" name="strPhoneNumber" placeholder="phone number" value="" />
+            <div class="errorpopup">
+                <p>This field is required</p>
+            </div><!-- .error pop up -->
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
             <label>* Country</label>
             <input type="text" name="strCountry" placeholder="country" value="" />
+            <div class="errorpopup">
+                <p>This field is required</p>
+            </div><!-- .error pop up -->
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
             <label>* Age</label>
             <input type="text" name="strAge" placeholder="age" value="" />
+            <div class="errorpopup">
+                <p>This field is required</p>
+            </div><!-- .error pop up -->
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup">
             <label>* Image</label>
             <input type="file" name="image" value="" />
+            <div class="errorpopup">
+                <p>This field is required</p>
+            </div><!-- .error pop up -->
         </div><!-- .fieldgroup -->
 
         <input class="cta" type="submit" value="Sign up for VIP List">
