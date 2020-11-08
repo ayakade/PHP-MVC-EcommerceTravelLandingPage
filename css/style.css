@@ -129,21 +129,22 @@ html, body {
     display: inline-block; 
     font-weight: 100; 
     text-align: center; 
-	font-size: 30px; 
+	font-size: 20px; 
 	margin-bottom: 10px;
 } 
-#clock > div{ 
+#clock .count { 
     padding: 10px; 
     border-radius: 8px; 
     background: #044b6b; 
     display: inline-block; 
 } 
-#clock div > span{ 
+#clock .count span{ 
     padding: 15px; 
     border-radius: 8px; 
     background: #f3e6c9; 
 	display: inline-block;
 	color: #044b6b;
+	width: 50px;
 } 
 
 .smalltext{ 
