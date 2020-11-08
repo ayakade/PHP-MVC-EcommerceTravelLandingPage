@@ -8,6 +8,7 @@ include("libs/Errors.php");
 
 include("models/Customers.php");
 include("models/Employees.php");
+include("models/Cities.php");
 
 $controller = setVariable("controller", "Public");
 $action = setVariable("action", "main");
