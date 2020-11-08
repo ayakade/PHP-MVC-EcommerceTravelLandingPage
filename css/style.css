@@ -255,7 +255,7 @@ html, body {
 
 .form {
 	background: #F7E4BC;
-	padding: 50px 30px;
+	padding: 50px 20px;
 }
 
 .form .title {
@@ -270,12 +270,9 @@ html, body {
 	margin-bottom: 30px;
 }
 
-.form .title .lists {
-	padding: 0 35px;
-}
-
 .form .title .lists .list {
 	margin-bottom: 20px;
+	padding: 0 20px;
 }
 
 .form .title .lists .list h3 {
