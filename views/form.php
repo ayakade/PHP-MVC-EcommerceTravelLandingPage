@@ -1,20 +1,22 @@
-<div class="form">
+<div class="form" id="signup">
     <div class="title col-12 col-lg-5">
-        <h2>Sign up now</h2>
+        <h2>Sign up for our VIP list now!</h2>
+        <p>Sign up now and get special promotions from us</p>
+
         <div class="lists">
             <div class="list">
-                <h3>list 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula mauris sit amet nisl ultrices, vitae faucibus risus maximus.</p>
+                <h3>1. Limited discount code</h3>
+                <p>If you sign up now, you will a get discount code you can use for your first trip with us. Save your money!</p>
             </div><!-- .list -->
 
             <div class="list">
-                <h3>list 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula mauris sit amet nisl ultrices, vitae faucibus risus maximus.</p>
+                <h3>2. VIP early access</h3>
+                <p>Once you sign up, you will be on our VIP list. You will get early access to our website and other promotion events!</p>
             </div><!-- .list -->
 
             <div class="list">
-                <h3>list 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula mauris sit amet nisl ultrices, vitae faucibus risus maximus.</p>
+                <h3>3. Newsletters</h3>
+                <p>You will get our newsletter there are sale info, promotions, unique contents about travel, etc.</p>
             </div><!-- .list -->
 
         </div><!-- .lists -->
@@ -25,41 +27,41 @@
         <input type="hidden" name="action" value="signup" />
         
         <div class="fieldgroup required">
-            <label>First name</label>
+            <label>* First name</label>
             <input type="text" name="strFirstName" placeholder="first name" value="" />
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
-            <label>Last name</label>
+            <label>* Last name</label>
             <input type="text" name="strLastName" placeholder="last name" value="" />
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
-            <label>Email address</label>
+            <label>* Email address</label>
             <input type="text" name="strEmail" placeholder="email address" value="" />
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
-            <label>Phone number</label>
+            <label>* Phone number</label>
             <input type="text" name="strPhoneNumber" placeholder="phone number" value="" />
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
-            <label>Country</label>
+            <label>* Country</label>
             <input type="text" name="strCountry" placeholder="country" value="" />
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup required">
-            <label>Age</label>
+            <label>* Age</label>
             <input type="text" name="strAge" placeholder="age" value="" />
         </div><!-- .fieldgroup -->
 
         <div class="fieldgroup">
-            <label>Image</label>
+            <label>* Image</label>
             <input type="file" name="image" value="" />
         </div><!-- .fieldgroup -->
 
-        <input class="cta" type="submit" value="Sign up">
+        <input class="cta" type="submit" value="Sign up for VIP List">
     </form>
 
 </div><!-- .form / form.php -->
