@@ -2,7 +2,7 @@
 
 Class AdminController extends Controller {
 
-	var $msg = "";
+	// var $msg = "";
 
 	// login page
 	public function login() 
