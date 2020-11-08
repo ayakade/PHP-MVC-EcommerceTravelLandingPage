@@ -2,6 +2,8 @@
 
 Class AdminController extends Controller {
 
+	var $msg = "";
+
 	// login page
 	public function login() 
 	{
@@ -16,16 +18,16 @@ Class AdminController extends Controller {
 		$passwordHash = password_hash($password, PASSWORD_DEFAULT);
 		// echo $passwordHash;
 
+		$_SESSION["userId"] = Employees::logIn($username);
+		// echo $_SESSION["userId"];
+
+		// get user info with user ID
+		$user = Employees::getUserInfo($_SESSION["userId"]);
+		// print_r($user);
+
 		// if username & password are given
 		if(!($username=="" OR $password==""))
 		{
-			$_SESSION["userId"] = Employees::logIn($username);
-			// echo $_SESSION["userId"];
-
-			// get user info with user ID
-			$user = Employees::getUserInfo($_SESSION["userId"]);
-			// print_r($user);
-
 			if ($user)
 			{
 				// check if password matches
@@ -35,23 +37,45 @@ Class AdminController extends Controller {
 					$this->go("admin", "adminMain"); 
 
 				} else {
-					echo "password not correct";
+					// $this->msg = "Your username and password don't match";
+					$this->go("admin", "error"); 
+					// echo "Your username and password don't match";
 				}
-			}
+			} 
 
 		// if username & password are not given
 		} else if ($username=="" && $password==""){
-			echo "enter your user name and  password";
+			// $this->msg = "Please enter your username and password";
+			$this->go("admin", "error"); 
+			// echo "enter your user name and password";
 		
 		// if username are not given
 		} else if ($username=="") {
-			echo "enter your user name";
+			// $this->msg = "Please enter your username";
+			$this->go("admin", "error"); 
+			// echo "enter your user name";
 
 		// if password are not given
 		} else if ($password=="") {
-			echo "enter your password";
+			// $this->msg = "Please enter your password";
+			$this->go("admin", "error"); 
+			// echo "enter your password";
 		}
-    }
+	}
+
+	// // login error message
+	// public function errorMessage()
+	// {
+	// 	$this->msg = $msg;
+	// }
+	
+	// login error page
+	public function error()
+	{
+		// $this->loadView("views/admin-error-message.php", 1, "msg"); // save the results of this view, into $this->content
+
+		$this->loadLastView("views/admin-login-error.php"); // final view
+	}
     
     // admin logout
     public function doLogOut()
@@ -86,13 +110,13 @@ Class AdminController extends Controller {
     }
     
     // if session is out go back admin login page
-	public function pretrip(){
+	// public function pretrip(){
 
-		if($_SESSION["userId"]=="")
-		{
-			$this->go("admin", "login");
-		}
-	}
+	// 	if($_SESSION["userId"]=="")
+	// 	{
+	// 		$this->go("admin", "login");
+	// 	}
+	// }
 }
 
 ?>
