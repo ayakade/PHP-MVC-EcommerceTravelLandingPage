@@ -25,6 +25,8 @@
     <form class="col-12 col-lg-7" id="signupForm" method="post" action="index.php" enctype="multipart/form-data">
         <input type="hidden" name="controller" value="public" />
         <input type="hidden" name="action" value="signup" />
+
+        <p><strong>Please fill out all field</strong></p>
         
         <div class="fieldgroup required">
             <label>* First name</label>
@@ -82,7 +84,7 @@
             </div><!-- .error pop up -->
         </div><!-- .fieldgroup -->
 
-        <input class="cta" type="submit" value="Sign up for VIP List">
+        <input class="cta" type="submit" value="Sign Up for VIP List">
     </form>
 
 </div><!-- .form / form.php -->
