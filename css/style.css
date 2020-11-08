@@ -546,6 +546,7 @@ input[type="submit"] {
 
 	.points .row .point .title h3 {
 		font-size: 20px;
+		margin-bottom: 10px;
 	}
 
 	/* form section */
@@ -581,6 +582,12 @@ input[type="submit"] {
 	#signupForm .cta {
 		font-size: 18px;
 		margin-top: 20px;
+	}
+
+	/* points section */
+
+	.points .point {
+		padding:0;
 	}
 
 	/* hero bottom */
