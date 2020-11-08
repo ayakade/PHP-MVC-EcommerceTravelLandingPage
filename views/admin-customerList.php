@@ -1,7 +1,7 @@
 <div class="customerList col-12 col-lg-12">
     <h1>Customers List</h1>
 
-    <ul class="list">
+    <ol class="list">
         <?php
         foreach ($this->oCustomers as $customer)
         {
@@ -14,6 +14,6 @@
         <?php
         }
         ?>
-    </ul><!-- .list -->
+    </ol><!-- .list -->
 
 </div><!-- .customerList / customerList.php -->
