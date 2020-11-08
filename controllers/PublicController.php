@@ -26,17 +26,43 @@ Class PublicController extends Controller{
     // sign up process
     public function signup()
     {
-        if($_POST["strFirstname"] && $_POST["strLastname"] && $_POST["strEmail"] && $_POST["strPhoneNumber"] && $_POST["strCountry"] && $_POST["strAge"] && $_POST["strImage"])
+        // if all required field is filled
+        if($_POST["strFirstName"] && $_POST["strLastName"] && $_POST["strEmail"] && $_POST["strPhoneNumber"] && $_POST["strCountry"] && $_POST["strAge"] && $_FILES["image"])
 		{
-			$con = DB::connect();
-			$sql = "INSERT INTO week8Customers (strFirstname, strLastName, strEmail, strPhoneNumber, strCountry, strAge) values ('".$_POST["strFirstname"]."', '".$_POST["strLastName"]."','".$_POST["strEmail"]."','".$_POST["strPhoneNumber"]."','".$_POST["strCountry"]."','".$_POST["strAge"]."','".$_POST["strImage"]."')";
-		
-			mysqli_query($con, $sql);
+            //reference: https://www.codeandcourse.com/how-to-upload-image-in-php-and-store-in-folder-and-database/
+            // file upload path
+            $targetDir = "assets/";
+            $fileName = basename($_FILES['image']['name']);
+            $targetFilePath = $targetDir . $fileName;
+            // check the extension of the uploaded file
+            $fileType = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+            
+            //allowed file types
+            $allowTypes = array('png', 'jpg', 'jpeg');
 
-			// if successed go to success page
-			$this->go("public", "success"); 
+            if (!file_exists($targetFilePath)) 
+            {
+                if(in_array($fileType, $allowTypes))
+                {
+                    // Upload file to server
+                    if(move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath))
+                    {
+                        $con = DB::connect();
+                        $sql = "INSERT INTO week8Customers (strFirstName, strLastName, strEmail, strPhoneNumber, strCountry, strAge, strImage) values ('".$_POST["strFirstName"]."', '".$_POST["strLastName"]."','".$_POST["strEmail"]."','".$_POST["strPhoneNumber"]."','".$_POST["strCountry"]."','".$_POST["strAge"]."', '".$fileName."')";
+
+                        mysqli_query($con, $sql);
+
+                        // if successed go to success page
+                        $this->go("public", "success"); 
+                    }
+                    // } else {
+                    //     echo "error";
+                    // }
+                }
+            }  
 		} else {
-			// if unsucseful 
+            // if unsucseful 
+            // echo "unsucseful";
 			$this->go("public", "main"); 
 		}
     }
