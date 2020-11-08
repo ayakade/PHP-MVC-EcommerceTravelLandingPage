@@ -101,7 +101,6 @@ html, body {
 
 .heroTop .title {
 	margin: 50px 0;
-	padding: 0 50px;
 }
 
 .heroTop .title img {
@@ -116,6 +115,7 @@ html, body {
 
 .heroTop .title p {
 	margin-bottom: 40px;
+	padding: 0 30px;
 }
 
 /* countdown */
