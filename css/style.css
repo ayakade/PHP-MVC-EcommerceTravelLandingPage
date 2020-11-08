@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
     color: #044b6b;
 }
 
@@ -86,17 +86,22 @@ html, body {
 	text-align: center;
 }
 
+.heroTop .filter {
+	background-color: #F7E4BC;
+}
+
 .heroTop .heroImage {
     padding: 200px 0;
 	background: url(../imgs/hero-top.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	opacity: 70%;
 }
 
 .heroTop .title {
 	margin: 50px 0;
-	padding: 0 30px;
+	padding: 0 50px;
 }
 
 .heroTop .title img {
@@ -110,7 +115,7 @@ html, body {
 }
 
 .heroTop .title p {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 /* container */
@@ -120,14 +125,96 @@ html, body {
 	text-align: center;
 }
 
-.intro, .points {
+/* intro section */
+
+.intro {
+	margin: 50px 0;
 	padding: 0 40px;
 }
 
-/* intro section */
+.intro img {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	margin-bottom: 50px;
+}
 
-.intro, .points {
-	margin: 50px 0;
+.intro .cities .title {
+	margin-bottom: 50px;
+}
+
+.intro .cities .title h2 {
+	margin-bottom: 20px;
+}
+
+.intro .cities {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.intro .cities .city {
+	margin-bottom: 20px;
+}
+
+.intro .cities .city img {
+	width: 130px;
+	height: 130px;
+	margin-bottom: 10px;
+}
+
+/* accommodation */
+
+.accommodations h2 {
+	margin-bottom: 40px;
+	padding: 0 10%;
+}
+
+.accommodation {
+	margin-bottom: 60px;
+	padding: 0 60px;
+}
+
+.accommodation h3 {
+	margin-bottom: 10px;
+}
+
+.accommodation img {
+	width: 250px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+/* points section */
+
+.points {
+	padding: 0 50px;
+	margin-bottom: 80px;
+}
+
+.points h2 {
+	margin-bottom: 30px;
+	padding: 0 20px;
+}
+
+.points .point {
+	display: flex;
+	text-align: left;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.points .point i {
+	color: #3B7197;
+	font-size: 35px;
+}
+
+.points .point .title {
+	margin-left: 10px;
+}
+
+.points .point .title h3 {
+	font-size: 16px;
+	margin-bottom: 5px;
 }
 
 /* form section */
@@ -142,11 +229,23 @@ html, body {
 }
 
 .form .title h2 {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+}
+
+.form .title p {
+	margin-bottom: 30px;
+}
+
+.form .title .lists {
+	padding: 0 35px;
 }
 
 .form .title .lists .list {
 	margin-bottom: 20px;
+}
+
+.form .title .lists .list h3 {
+	margin-bottom: 10px;
 }
 
 #signupForm {
@@ -156,11 +255,11 @@ html, body {
 }
 
 label {
-	width: 35%;
+	width: 40%;
 }
 
 input[type="text"] {
-	width: 60%;
+	width: 55%;
 }
 
 label {
@@ -186,12 +285,64 @@ input[type="submit"] {
 
 /* hero bottom */
 
+.heroBottom {
+	position: relative;
+}
+
 .heroBottom .heroImage {
     padding: 200px 0;
 	background: url(../imgs/hero-bottom.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+}
+
+.heroBottom .title {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	left: 15%;
+	top: 40%;
+}
+
+.heroBottom .title h2 {
+	margin-bottom: 5px;
+}
+
+/* success */
+
+.success-container {
+	background: #F7E4BC;
+	padding: 0 30px;
+}
+
+.success {
+	margin-top: 100px;
+	background: #fff;
+	padding: 50px 10px;
+	border-radius: 30px;
+}
+
+.success img {
+	width: 200px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.success h1 {
+	margin-bottom: 10px;
+}
+
+.success p {
+	padding: 0 50px;
+}
+
+.success p strong {
+	font-size: 18px;
+}
+
+.success .title {
+	margin-bottom: 30px;
 }
 
 /* DESKTOP */
@@ -237,8 +388,11 @@ input[type="submit"] {
 
 	.heroTop .title {
 		position: absolute;
-		top: 50px;
-		left: 150px;
+		top: 60px;
+		left: 23%;
+		background: rgba(255, 255, 255, 0.8);;
+		padding: 40px 25px;
+		border-radius: 20px;
 	}
 
 	.intro, .points {
@@ -247,8 +401,95 @@ input[type="submit"] {
 	
 	/* intro section */
 
-	.intro h2 {
+	.intro {
+		display: flex;
+		align-items: center;
+		margin: 150px 0;
+	}
+
+	.intro img {
+		width: 500px;
+		height: 500px;
+		margin: 0;
+		margin-right: 100px;
+	}
+
+	.intro .cities .title {
+		text-align: left;
+		padding-right: 80px;
+	}
+
+	.intro .cities .city {
 		text-align: center;
+	}
+
+	.intro .cities .city img {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	/* accommodation section */
+
+	.accommodations {
+		padding: 0 100px;
+		margin-bottom: 150px;
+	}
+
+	.accommodations h2 {
+		margin-bottom: 80px;
+	}
+
+	.accommodations .row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.accommodations .accommodation {
+		text-align: left;
+	}
+
+	.accommodations .accommodation {
+		margin: 0 10px;
+		padding: 50px;
+		border-radius: 40px;
+		border: #6DA4A9 solid 3px;
+	}
+
+	.accommodations .accommodation:nth-child(even) {
+		background: #6DA4A9;
+		color: #fff;
+		border: none;
+	}
+
+	.accommodations .accommodation img {
+		width: 300px;
+	}
+
+	/* points section */
+
+	.points h2 {
+		margin-bottom: 50px;
+	}
+
+	.points .row {
+		display: flex;
+	}
+
+	.points .row .point {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.points .row .point i {
+		margin-bottom: 20px;
+	}
+
+	.points .row .point .title {
+		margin: 0;
+	}
+
+	.points .row .point .title h3 {
+		font-size: 20px;
 	}
 
 	/* form section */
@@ -257,7 +498,11 @@ input[type="submit"] {
 		display: flex;
 		text-align: left;
 		margin: 0;
-		padding: 100px 130px;
+		padding: 100px 150px;
+	}
+
+	.form .title p {
+		margin-bottom: 50px;
 	}
 
 	.form .title {
@@ -265,8 +510,17 @@ input[type="submit"] {
 		margin-right: 70px;
 	}
 
+	.form .title .lists {
+		padding: 0;
+	}
+
 	#signupForm {
 		padding: 80px 50px;
+	}
+
+	#signupForm .cta {
+		font-size: 18px;
+		margin-top: 20px;
 	}
 
 	/* hero bottom */
@@ -274,5 +528,15 @@ input[type="submit"] {
 	.heroBottom .heroImage {
 		padding: 300px 0;
 		background-position: 80% 95%;
+	}
+
+	.heroBottom .title {
+		top: 25%;
+		left: 40%;
+	}
+
+	/* success */
+	.success-container {
+		padding: 0 30%;
 	}
 }
