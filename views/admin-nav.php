@@ -10,9 +10,8 @@
 		<div id="flyoutMenu">
         <?php
             $arrMenu = array(
-                array('menu'=>'Customers', 'link'=>'index.php?controller=admin&action=adminMain', 'icon'=>'fas fa-address-book'),
-                // array('menu'=>'Logout', 'link'=>'index.php?controller=admin&action=doLogOut', 'icon'=>'fas fa-sign-out-alt')
-                array('menu'=>'Logout', 'link'=>'index.php?controller=public&action=doLogOut', 'icon'=>'fas fa-sign-out-alt')
+                array('menu'=>'Customers', 'link'=>'index.php?controller=admin&action=adminMain'),
+                array('menu'=>'Logout', 'link'=>'index.php?controller=admin&action=doLogOut')
             );
            
             foreach ($arrMenu as $key => $menu) {
@@ -29,7 +28,6 @@
         foreach ($arrMenu as $key => $menu) {
     ?>
         <a href="<?=$menu["link"]?>"><?=$menu["menu"]?></a>
-        <!-- <a href="<?=$menu["link"]?>"><i class="<?=$menu["icon"]?>"><?=$menu["menu"]?></a> -->
     <?php
         }
     ?>
