@@ -111,12 +111,45 @@ html, body {
 }
 
 .heroTop .title h1 {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .heroTop .title p {
 	margin-bottom: 40px;
 }
+
+/* countdown */
+
+#clock {
+	display: flex;
+}
+
+#clock { 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+	font-size: 30px; 
+	margin-bottom: 10px;
+} 
+#clock > div{ 
+    padding: 10px; 
+    border-radius: 8px; 
+    background: #044b6b; 
+    display: inline-block; 
+} 
+#clock div > span{ 
+    padding: 15px; 
+    border-radius: 8px; 
+    background: #f3e6c9; 
+	display: inline-block;
+	color: #044b6b;
+} 
+
+.smalltext{ 
+    padding-top: 5px; 
+    font-size: 16px; 
+} 
 
 /* container */
 
@@ -254,6 +287,11 @@ html, body {
 	border-radius: 50px;
 }
 
+#signupForm p {
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
 label {
 	width: 40%;
 }
@@ -282,8 +320,6 @@ input[type="text"] {
 input[type="submit"] {
 	border: none;
 }
-
-/* error */
 
 /* error */
 
@@ -410,7 +446,7 @@ input[type="submit"] {
 
 	.heroTop .title {
 		position: absolute;
-		top: 60px;
+		top: 10px;
 		left: 23%;
 		background: rgba(255, 255, 255, 0.8);;
 		padding: 40px 25px;
