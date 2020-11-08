@@ -221,15 +221,16 @@ html, body {
 /* points section */
 
 .points {
-	padding: 0 50px;
 	margin-bottom: 80px;
 }
 
 .points h2 {
+	padding: 0 20px;
 	margin-bottom: 30px;
 }
 
 .points .point {
+	padding: 0 50px;
 	display: flex;
 	text-align: left;
 	align-items: center;
@@ -356,7 +357,7 @@ input[type="submit"] {
 	position: absolute;
 	color: #fff;
 	text-align: center;
-	left: 5%;
+	left: 6%;
 	top: 40%;
 }
 
