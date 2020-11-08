@@ -32,8 +32,11 @@ Class PublicController extends Controller{
             //reference: https://www.codeandcourse.com/how-to-upload-image-in-php-and-store-in-folder-and-database/
             // file upload path
             $targetDir = "assets/";
-            $fileName = basename($_FILES['image']['name']);
+            // create unique file name
+            $timestamp =round(microtime(true) * 1000);
+            $fileName = $timestamp.basename($_FILES['image']['name']);
             $targetFilePath = $targetDir . $fileName;
+
             // check the extension of the uploaded file
             $fileType = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
             
@@ -47,6 +50,7 @@ Class PublicController extends Controller{
                     // Upload file to server
                     if(move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath))
                     {
+                        // insert to db
                         $con = DB::connect();
                         $sql = "INSERT INTO week8Customers (strFirstName, strLastName, strEmail, strPhoneNumber, strCountry, strAge, strImage) values ('".$_POST["strFirstName"]."', '".$_POST["strLastName"]."','".$_POST["strEmail"]."','".$_POST["strPhoneNumber"]."','".$_POST["strCountry"]."','".$_POST["strAge"]."', '".$fileName."')";
 
