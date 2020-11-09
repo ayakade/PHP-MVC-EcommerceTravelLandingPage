@@ -10,6 +10,7 @@ body {
 }
 
 a {
+	color: #044b6b;
 	text-decoration: none;
 }
 
@@ -72,6 +73,15 @@ html, body {
     color: #fff;
 	text-align: center;
 	padding: 20px;
+}
+
+.footer  .sns {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.footer .sns i {
+	color: #fff;
 }
 
 .footer p {
@@ -335,6 +345,32 @@ input[type="submit"] {
 	border: 2px solid #E1AC71;
 }
 
+/* contact */
+
+.contact {
+	margin: 50px 0;
+}
+
+.contact p {
+	font-size: 16px;
+}
+
+.contact .title h2 {
+	font-size:18px;
+	margin-bottom: 5px;
+}
+
+.contact .title {
+	padding: 0 40px;
+	margin-bottom: 30px;;
+}
+
+.contact .sns {
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+
 /* hero bottom */
 
 .heroBottom {
@@ -589,6 +625,20 @@ input[type="submit"] {
 
 	.points .point {
 		padding:0;
+	}
+
+	/* contact section */
+
+	.contact .title h2 {
+		font-size: 24px;
+	}
+
+	.contact p {
+		font-size: 18px;
+	}
+
+	.contact .sns i {
+		font-size: 40px;
 	}
 
 	/* hero bottom */
