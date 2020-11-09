@@ -500,14 +500,14 @@ input[type="submit"] {
 	.intro {
 		display: flex;
 		align-items: center;
-		margin: 150px 0;
+		margin: 150px auto;
+		justify-content: space-around;
 	}
 
 	.intro img {
 		width: 500px;
 		height: 500px;
 		margin: 0;
-		margin-right: 100px;
 	}
 
 	.intro .cities .title {
@@ -527,6 +527,7 @@ input[type="submit"] {
 
 	.accommodations {
 		padding: 0 100px;
+		margin: 0 auto;
 		margin-bottom: 150px;
 	}
 
@@ -536,11 +537,12 @@ input[type="submit"] {
 
 	.accommodations .row {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	.accommodations .accommodation {
 		text-align: left;
+		width: 400px;
 	}
 
 	.accommodations .accommodation {
@@ -568,9 +570,11 @@ input[type="submit"] {
 
 	.points .row {
 		display: flex;
+		justify-content: space-around;
 	}
 
 	.points .row .point {
+		width: 500px;
 		flex-direction: column;
 		text-align: center;
 	}
@@ -593,8 +597,9 @@ input[type="submit"] {
 	.form {
 		display: flex;
 		text-align: left;
-		margin: 0;
+		margin: 0 auto;
 		padding: 100px 150px;
+		justify-content: space-around;
 	}
 
 	.form .title p {
@@ -603,7 +608,7 @@ input[type="submit"] {
 
 	.form .title {
 		margin-top: 80px;
-		margin-right: 70px;
+		width: 600px;
 	}
 
 	.form .title .lists {
@@ -616,6 +621,7 @@ input[type="submit"] {
 
 	#signupForm {
 		padding: 80px 50px;
+		width: 700px;
 	}
 
 	#signupForm .cta {
