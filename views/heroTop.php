@@ -1,6 +1,6 @@
-<div class="heroTop">
+<div class="heroTop col-12 col-lg-12">
     <div class="filter">
-        <div class="heroImage"></div>
+        <div class="heroImage col-12 col-lg-12"></div>
     </div><!-- .filter -->
     <div class="title">
        <img src="imgs/logo-blue.png" alt="AROUND THE WORLD">
