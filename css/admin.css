@@ -333,6 +333,6 @@ input[type="submit"] {
 	}
 
 	.customer .info table tr {
-		width: 50%
+		width: 200px;
 	}
 }
