@@ -324,19 +324,15 @@ input[type="submit"] {
 .errorpopup { 
 	opacity: 0; 
 	transition: opacity .5s linear; 
-	color: crimson;
+	color: #E1AC71;
 }
 
 .error .errorpopup {
 	opacity: 1;
 }
 
-.error {
-	color: crimson;
-}
-
 .error input {
-	border: 2px solid crimson;
+	border: 2px solid #E1AC71;
 }
 
 /* hero bottom */
@@ -345,12 +341,17 @@ input[type="submit"] {
 	position: relative;
 }
 
+.heroBottom .filter {
+	background-color: #F7E4BC;
+}
+
 .heroBottom .heroImage {
     padding: 200px 0;
 	background: url(../imgs/hero-bottom.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	opacity: 70%;
 }
 
 .heroBottom .title {
@@ -445,7 +446,7 @@ input[type="submit"] {
 	.heroTop .title {
 		position: absolute;
 		top: 10px;
-		left: 23%;
+		left: 22vw;
 		background: rgba(255, 255, 255, 0.8);;
 		padding: 40px 25px;
 		border-radius: 20px;
@@ -598,7 +599,7 @@ input[type="submit"] {
 	}
 
 	.heroBottom .title {
-		top: 25%;
+		top: 150px;
 		left: 40%;
 	}
 

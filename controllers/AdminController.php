@@ -2,7 +2,7 @@
 
 Class AdminController extends Controller {
 
-	// var $msg = "";
+	var $msg = "";
 
 	// login page
 	public function login() 
@@ -44,7 +44,7 @@ Class AdminController extends Controller {
 			} 
 
 		// if username & password are not given
-		} else if ($username=="" && $password==""){
+		} else if ($username=="" && $password=="") {
 			// $this->msg = "Please enter your username and password";
 			$this->go("admin", "error"); 
 			// echo "enter your user name and password";
