@@ -3,7 +3,7 @@
 
     <div class="cities col-12 col-lg-6">
         <div class="title">
-            <h2>Travel your favorite city with us </h2>
+            <h2>Travel your favorite city with us</h2>
             <p>We offer you unique accommodations around the world. There are a variety of accommodations that suit your travel with friends, family, and lover. You will find one of the kind accommodations you will never find with another tourism company. We promise that our special accommodations make your travel more memorable.<br><br>Let us help to make your travel greater!</p>
         </div><!-- .title -->
         <?php
