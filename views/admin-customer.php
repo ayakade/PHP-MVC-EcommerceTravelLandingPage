@@ -6,8 +6,8 @@
         { 
         ?>
         <img src="assets/<?=$customer->strImage?>" alt="<?=$customer->Name?>">
-        <table class="col-12 col-lg-12">
-            <tr class="col-6 col-lg-5">
+        <table>
+            <tr>
                 <th>Customer ID</th>
                 <th>First name</th>
                 <th>Last name</th>
@@ -17,7 +17,7 @@
                 <th>Age</th>
             </tr>
 
-            <tr class="col-6 col-lg-7">
+            <tr>
                 <td><?=$customer->id?></td>
                 <td><?=$customer->strFirstName?></td>
                 <td><?=$customer->strLastName?></td>
