@@ -303,7 +303,8 @@ input[type="submit"] {
     }
 
     .login-wrapper .login {
-        padding: 50px 80px;
+		padding: 50px 80px;
+		width: 500px;
     }
     
     /* container */
