@@ -25,7 +25,7 @@
             </div><!-- .count -->
         </div><!-- .clock -->
 
-       <p>Our website is lanching on Dec 13th.<br>Sign up for our VIP list now, get limited dicount code and save money for your next trip!</p>
+       <p>Our website is lanching on December 13th.<br>Sign up for our VIP list now, get limited dicount code and save money for your next trip!</p>
        <a class="cta" href="#signup">Come Travel with Us!</a>
     </div><!-- .title -->
 </div><!-- .heroTop / heroTop.php -->
