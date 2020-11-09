@@ -1,5 +1,5 @@
 <div class="form" id="signup">
-    <div class="title col-12 col-lg-5">
+    <div class="title col-12">
         <h2>Sign up for our VIP list now!</h2>
         <p>Sign up now and get special promotions from us</p>
 
@@ -22,7 +22,7 @@
         </div><!-- .lists -->
     </div><!-- title -->
 
-    <form class="col-12 col-lg-7" id="signupForm" method="post" action="index.php" enctype="multipart/form-data">
+    <form class="col-12" id="signupForm" method="post" action="index.php" enctype="multipart/form-data">
         <input type="hidden" name="controller" value="public" />
         <input type="hidden" name="action" value="signup" />
 

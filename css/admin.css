@@ -274,12 +274,14 @@ input[type="submit"] {
 		overflow-x: hidden;
 		padding: 100px 70px;
         font-size: 25px;
-        align-items: flex-start;
+		align-items: flex-start;
+		width: 300px;
     }
     
     nav {
         display: flex;
-        flex-direction: column;
+		flex-direction: column;
+		
 	}
 
 	nav a {
@@ -307,11 +309,15 @@ input[type="submit"] {
     /* container */
 
     .container {
-		margin-left:25%;
+		margin-left: 300px;
 		padding: 50px;
     }
     
-    /* customer */
+	/* customer */
+	
+	.customer {
+		width: 1000px;
+	}
 
     .customer .info {
         display: flex;
@@ -324,5 +330,9 @@ input[type="submit"] {
 	
 	.customer .info table:nth-child(2) {
 		padding-left: 50px;
+	}
+
+	.customer .info table tr {
+		width: 200px;
 	}
 }

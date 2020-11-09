@@ -2,7 +2,7 @@
     <h2>Take a sneak peek of our unique accommodations</h2>
 
     <div class="row">
-        <div class="accommodation col-12 col-lg-4">
+        <div class="accommodation col-12">
             <img src="imgs/accommodation-1.png" alt="Kep Mountain Lodge">
             <div class="title">
                 <h3>Kep Mountain Lodge</h3>
@@ -10,7 +10,7 @@
             </div><!-- .title -->
         </div><!-- .accommodation -->
 
-        <div class="accommodation col-12 col-lg-4">
+        <div class="accommodation col-12">
             <img src="imgs/accommodation-2.png" alt="Tubohotel">
             <div class="title">
                 <h3>Tubohotel</h3>
@@ -18,7 +18,7 @@
             </div><!-- .title -->
         </div><!-- .accommodation -->
 
-        <div class="accommodation col-12 col-lg-4">
+        <div class="accommodation col-12">
             <img src="imgs/accommodation-3.png" alt="he AirShip">
             <div class="title">
                 <h3>The AirShip</h3>
