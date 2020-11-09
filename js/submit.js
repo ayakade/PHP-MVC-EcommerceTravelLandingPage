@@ -1,7 +1,7 @@
 // validation for submit form
 var Validate = function() {
 	var validate = this;
-	validate.element = document.getElementById("signUpForm");
+	validate.element = document.getElementById("signupForm");
 
 	validate.element.addEventListener("submit", function(event) {
 		
