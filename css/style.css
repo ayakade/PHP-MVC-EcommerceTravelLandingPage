@@ -598,7 +598,7 @@ input[type="submit"] {
 		display: flex;
 		text-align: left;
 		margin: 0 auto;
-		padding: 100px 150px;
+		padding: 100px 10%;
 		justify-content: space-around;
 	}
 
@@ -609,6 +609,7 @@ input[type="submit"] {
 	.form .title {
 		margin-top: 80px;
 		width: 600px;
+		margin-right: 50px;
 	}
 
 	.form .title .lists {
