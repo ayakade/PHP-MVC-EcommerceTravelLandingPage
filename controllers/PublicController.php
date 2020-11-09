@@ -13,6 +13,7 @@ Class PublicController extends Controller{
         $this->loadView("views/accommodations.php", 1, "contentHTML"); 
         $this->loadView("views/points.php", 1, "contentHTML"); 
         $this->loadView("views/form.php", 1, "contentHTML"); 
+        $this->loadView("views/contact.php", 1, "contentHTML"); 
 
         $this->loadView("views/heroBottom.php", 1, "heroBottomHTML"); 
 
