@@ -1,6 +1,6 @@
 <div class="contact">
     <div class="title">
-        <h2>If you have any question with us, feel free to contact us anytime!</h2>
+        <h2>If you have any question for us, feel free to contact us anytime!</h2>
         <p>info@arondtheworld.com</p>
     </div><!-- .title -->
 
