@@ -481,8 +481,11 @@ input[type="submit"] {
 
 	.heroTop .title {
 		position: absolute;
-		top: 10px;
-		left: 22vw;
+		top: 250px;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    	-webkit-transform: translate(-50%, -50%);
+    	-ms-transform: translate(-50%, -50%);
 		background: rgba(255, 255, 255, 0.8);;
 		padding: 40px 25px;
 		border-radius: 20px;
@@ -649,8 +652,11 @@ input[type="submit"] {
 	}
 
 	.heroBottom .title {
-		top: 150px;
-		left: 40%;
+		top: 100px;
+		left: 50%;
+    	transform: translateX(-50%);
+    	-webkit-transform: translateX(-50%);
+    	-ms-transform: translateX(-50%);
 	}
 
 	/* success */
