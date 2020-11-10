@@ -4,12 +4,7 @@ Class AdminController extends Controller {
 
 	var $msg = "";
 
-	// login page
-	public function login() 
-	{
-		$this->loadLastView("views/admin-login.php"); // final view
-	}
-
+	
 	// admin user login
 	public function doLogIn()
 	{
@@ -38,7 +33,7 @@ Class AdminController extends Controller {
 
 				} else {
 					// $this->msg = "Your username and password don't match";
-					$this->go("admin", "error"); 
+					$this->go("public", "error"); 
 					// echo "Your username and password don't match";
 				}
 			} 
@@ -46,19 +41,19 @@ Class AdminController extends Controller {
 		// if username & password are not given
 		} else if ($username=="" && $password=="") {
 			// $this->msg = "Please enter your username and password";
-			$this->go("admin", "error"); 
+			$this->go("public", "error"); 
 			// echo "enter your user name and password";
 		
 		// if username are not given
 		} else if ($username=="") {
 			// $this->msg = "Please enter your username";
-			$this->go("admin", "error"); 
+			$this->go("public", "error"); 
 			// echo "enter your user name";
 
 		// if password are not given
 		} else if ($password=="") {
 			// $this->msg = "Please enter your password";
-			$this->go("admin", "error"); 
+			$this->go("public", "error"); 
 			// echo "enter your password";
 		}
 	}
@@ -68,20 +63,12 @@ Class AdminController extends Controller {
 	// {
 	// 	$this->msg = $msg;
 	// }
-	
-	// login error page
-	public function error()
-	{
-		// $this->loadView("views/admin-error-message.php", 1, "msg"); // save the results of this view, into $this->content
-
-		$this->loadLastView("views/admin-login-error.php"); // final view
-	}
     
     // admin logout
     public function doLogOut()
     {
 		unset($_SESSION["userId"]);
-		$this->go("admin", "login");
+		$this->go("public", "login");
 	}
 
 
@@ -110,13 +97,15 @@ Class AdminController extends Controller {
     }
     
     // if session is out go back admin login page
-	// public function pretrip(){
+	public function pretrip(){
 
-	// 	if($_SESSION["userId"]=="")
-	// 	{
-	// 		$this->go("admin", "login");
-	// 	}
-	// }
+		if($_SESSION["userId"]=="")
+		{
+			$this->go("public", "login");
+		} else {
+			$this->oUser = Employees::getUserInfo($_SESSION["userId"]);
+		}
+	}
 }
 
 ?>

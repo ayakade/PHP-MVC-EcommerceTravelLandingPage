@@ -79,4 +79,18 @@ Class PublicController extends Controller{
  
         $this->loadLastView("views/main.php"); // final view
      }
+
+     // admin login page
+	public function login() 
+	{
+		$this->loadLastView("views/admin-login.php"); // final view
+    }
+    
+    // login error page
+	public function error()
+	{
+		// $this->loadView("views/admin-error-message.php", 1, "msg"); // save the results of this view, into $this->content
+
+		$this->loadLastView("views/admin-login-error.php"); // final view
+	}
 }
